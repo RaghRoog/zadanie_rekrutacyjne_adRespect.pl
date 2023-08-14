@@ -1,2 +1,2 @@
-Ta strona internetowa została stworzona na potrzeby procesu rekrutacji na stanowisko Front-End Developer w agencji [adRespect.pl](adrespect.pl).  
+Ta strona internetowa została stworzona na potrzeby procesu rekrutacji na stanowisko Front-End Developer w agencji [adRespect.pl](http://adrespect.pl).  
 Projekt graficzny jest własnością agencji adRespect.pl
