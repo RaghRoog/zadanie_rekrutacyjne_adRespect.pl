@@ -1,0 +1,30 @@
+.nav-container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.search-form{
+    display: none;
+}
+.search-form-display-flex{
+    gap: 12px;
+    display: flex;
+}
+.search-btn{
+    background-color: #1B5B31;
+    color: white;
+    border: none;
+    transition: ease-in .2s;
+    border-radius: 10px;
+}
+.search-btn:hover{
+    background-color: white;
+    color: #1B5B31;
+}
+
+@media only screen and (max-width: 991px) {
+    .search-form{
+        display: flex;   
+        gap: 12px;
+    }
+}

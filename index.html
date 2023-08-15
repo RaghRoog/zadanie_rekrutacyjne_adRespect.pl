@@ -5,9 +5,51 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>giarddesign</title>
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="main.css">
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js" defer></script>
+        <script type="module" src="script.js"></script>
     </head>
     <body>
-        <h1>hello</h1>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid nav-container">
+              <a class="navbar-brand" href="#">
+                <img src="imgs/giarddesign.svg" alt="logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end p-2" id="navbarSupportedContent">
+                <ul class="navbar-nav gap-lg-4">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Oferta</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">oferta 1</a></li>
+                            <li><a href="#" class="dropdown-item">oferta 2</a></li>
+                            <li><a href="#" class="dropdown-item">oferta 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">O firmie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Realizacje</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <form action="#" class="form-inline search-form">
+                            <input type="text" class="form-control">
+                            <button type="submit" class="search-btn">Search</button>
+                        </form>
+                    </li>
+                    <li class="nav-item d-none d-lg-flex search-icon">
+                        <img src="imgs/search-icon.svg" alt="search icon">
+                    </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <div style="width: 100vw;height: 600px; background-color: red;"></div>
     </body>
 </html>
