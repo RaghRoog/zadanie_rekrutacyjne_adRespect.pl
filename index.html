@@ -52,15 +52,15 @@
         </nav>
         <div class="container-fluid hero-section">
             <div class="row">
-                <div class="col-lg-7 left-side">
-                    <div class="text">
+                <div class="col-lg-7 grid-side">
+                    <div class="text-and-btns">
                         <p class="h1">Nowoczesna <br> aranżacja <br> Twojego ogrodu</p>
                         <p>
                             Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka 
                             realizacji. Oferujemy kompleksowy zakres usług z indywidualnym 
                             podejściem do każdego projektu.
                         </p>
-                        <div class="btn-container">
+                        <div id="hero-btn-container" class="btn-container">
                             <button class="btn">Skontaktuj się z nami</button>
                             <button class="btn">Zobacz nasze realizacje
                                 <img src="imgs/arrow-down.svg" alt="arrow down">
@@ -68,7 +68,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg right-side position-relative">
+                <div class="col-lg absolute-side position-relative">
                     <div style="height: 100%;width: 100%;" class="position-absolute end-0">
                         <div id="heroSectionCarousel" class="carousel slide" data-bs-ride="'carousel">
                             <div class="carousel-inner">
@@ -95,5 +95,41 @@
                 </div>
             </div>
         </div>
+        <div class="container-fluid o-firmie-section">
+            <div class="row">
+                <div class="col-lg absolute-side position-relative">
+                    <div class="img-container position-absolute end-0">
+                        <img src="/imgs/o-firmie-img.png" alt="o firmie image">
+                    </div>
+                </div>
+                <div class="col-lg-7 grid-side">
+                    <div class="text-and-btns">
+                        <small>O firmie</small>
+                        <p class="h1">Tworzymy z <span class="fst-italic">pasją</span></p>
+                        <p>
+                            Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą 
+                            wykwalifikowani projektanci oraz architekci, których zadaniem jest 
+                            rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja 
+                            to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria 
+                            i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do 
+                            współczesnego trybu życia.
+                        </p>
+                        <div id="o-firmie-btn-container" class="btn-container">
+                            <button class="btn">Poznaj nas bliżej
+                                <img src="/imgs/arrow-right.svg" alt="arrow">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            //skrypt odpowiedzialny za ustawianie odpowiedniej szerokości
+            //kontenerowi z przyciskami (potrzebny dla responsywności)
+            let heroBtnContainerWidth = document.getElementById('hero-btn-container').clientWidth
+            let oFirmieBtnContainer = document.getElementById('o-firmie-btn-container')
+            oFirmieBtnContainer.style.width = `${heroBtnContainerWidth}px`
+        </script>
     </body>
 </html>

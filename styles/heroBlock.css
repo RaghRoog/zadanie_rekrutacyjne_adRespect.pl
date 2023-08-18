@@ -1,18 +1,17 @@
 /* część stylów powtarza sie także dla sekcji 'o firmie'
 dlatego są one w jednym pliku */
 
-.hero-section{
-    background-color: #DCC1AB;
-}
-.left-side{
+/* wspólne style */
+.grid-side{
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding-right: 64px;
 }
-.text{
+.text-and-btns{
     width: min-content;
-    padding: 32px;
+    padding-bottom: 32px;
+    padding-top: 32px;
 }
 .h1{
     margin-bottom: 44px;
@@ -21,6 +20,14 @@ dlatego są one w jednym pliku */
 p{
     margin-bottom: 72px;
     width: 100%;
+}
+.absolute-side{
+    height: 90vh;
+}
+
+/* hero-section */
+.hero-section{
+    background-color: #DCC1AB;
 }
 .btn-container{
     display: flex;
@@ -43,10 +50,6 @@ p{
     padding-right: 22px;
     padding-top: 12px;
     padding-bottom: 14px;
-}
-.right-side{
-    background-color: #DCC1AB;
-    height: 90vh;
 }
 .carousel, .carousel-inner{
     height: inherit;
@@ -81,28 +84,76 @@ p{
     transform: rotate(180deg);
 }
 
-@media only screen and (max-width: 650px) {
-    .btn-container{
-        flex-direction: column;
-        width: 250px;
-    }
-    .right-side{
-        height: 60vh;
-    }
-    .controls-container{
-        display: none;
-    }
+/* 'o firmie' section */
+.o-firmie-section{
+    background-color: #1B5B31;
+    color: #F5F0EC;
 }
+.img-container{
+    height: 100%;
+    width: 100%;
+}
+.img-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.o-firmie-section .text-and-btns{
+    padding-left: 96px;
+}
+.o-firmie-section .grid-side{
+    justify-content: flex-start;
+    padding-right: 0;
+    padding-left: 64px;
+}
+.o-firmie-section .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    outline: 1px solid #F5F0EC;
+}
+small{
+    display: inline-block;
+    margin-bottom: 16px;
+}
+.o-firmie-section .h1{
+    margin-bottom: 40px;
+}
+
 @media only screen and (max-width: 992px) {
-    .left-side{
+    .grid-side{
         padding: 0;
         flex-direction: column;
     }
-    .text{
+    .text-and-btns{
         display: flex;
         flex-direction: column;
     }
     .btn-container{
         align-self: center;
+    }
+    .o-firmie-section .grid-side{
+        padding-left: 0;
+    }
+    .o-firmie-section .text-and-btns{
+        padding-left: 0;
+    }
+    #o-firmie-btn-container{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .btn-container{
+        flex-direction: column;
+        width: 250px;
+    }
+    .absolute-side{
+        height: 60vh;
+    }
+    .controls-container{
+        display: none;
     }
 }
