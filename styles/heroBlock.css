@@ -1,0 +1,108 @@
+/* część stylów powtarza sie także dla sekcji 'o firmie'
+dlatego są one w jednym pliku */
+
+.hero-section{
+    background-color: #DCC1AB;
+}
+.left-side{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 64px;
+}
+.text{
+    width: min-content;
+    padding: 32px;
+}
+.h1{
+    margin-bottom: 44px;
+    width: 100%;
+}
+p{
+    margin-bottom: 72px;
+    width: 100%;
+}
+.btn-container{
+    display: flex;
+    gap: 36px;
+    width: min-content;
+}
+.btn:first-child{
+    color: white;
+    background-color: #1B5B31;
+    outline: none;
+}
+.btn{
+    white-space: nowrap;
+    font-size: 1rem;
+    color: white;
+    color: #1B5B31;
+    border-radius: 200px;
+    outline: 1px solid #1B5B31;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 12px;
+    padding-bottom: 14px;
+}
+.right-side{
+    background-color: #DCC1AB;
+    height: 90vh;
+}
+.carousel, .carousel-inner{
+    height: inherit;
+    width: inherit;
+}
+.carousel-item{
+    height: 100%;
+}
+.img-fluid{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+.controls-container{
+    background-color: #F5F0EC;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    gap: 32px;
+}
+.control-btn{
+    width: 48px;
+    height: 48px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    border: 0;
+}
+.control-btn:last-child{
+    transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 650px) {
+    .btn-container{
+        flex-direction: column;
+        width: 250px;
+    }
+    .right-side{
+        height: 60vh;
+    }
+    .controls-container{
+        display: none;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .left-side{
+        padding: 0;
+        flex-direction: column;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-container{
+        align-self: center;
+    }
+}

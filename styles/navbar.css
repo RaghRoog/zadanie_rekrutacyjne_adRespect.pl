@@ -2,15 +2,22 @@
     width: 90%;
     display: flex;
     justify-content: center;
+    font-size: 1rem;
+}
+.navbar-brand img{
+    width: max(150px,10vw);
+    height: auto;
 }
 .search-form{
     display: none;
+    width: min(25vw, 300px);
 }
 .search-form-display-flex{
     gap: 12px;
     display: flex;
 }
 .search-btn{
+    font-size: 1rem;
     background-color: #1B5B31;
     color: white;
     border: none;
@@ -26,5 +33,11 @@
     .search-form{
         display: flex;   
         gap: 12px;
+        width: 80vw;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .navbar{
+        height: 10vh;
     }
 }
