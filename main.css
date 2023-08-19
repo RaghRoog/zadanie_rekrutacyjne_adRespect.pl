@@ -1,5 +1,6 @@
 @import './styles/navbar.css';
 @import './styles/heroBlock.css';
+@import './styles/ofertaSection.css';
 
 html{
     font-size: calc(15px + 0.2vw);

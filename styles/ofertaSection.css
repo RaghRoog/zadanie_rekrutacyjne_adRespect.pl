@@ -1,0 +1,69 @@
+.oferta-section{
+    background-color: #F5F0EC;
+    padding-top: 120px;
+    padding-bottom: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-container{
+    width: min(80%, 1000px);
+}
+.text-container p{
+    width: 75%;
+}
+.text-container small{
+    display: inline-block;
+    margin-bottom: 16px;
+}
+.text-container h1{
+    margin-bottom: 32px;
+}
+.cards-container{
+  padding-left: 5vw;
+  padding-right: 5vw;  
+}
+.card{
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-radius: 28px;
+    height: 100%;
+}
+.card img{
+    width: 44px;
+    height: auto;
+    padding-bottom: 32px;
+}
+.card h5{
+    margin-bottom: 12px;
+}
+.card .btn{
+    padding: 0;
+    width: fit-content;
+    border-radius: 0;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #1B5B31;
+    color: #1B5B31;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    margin-top: 64px;
+}
+.card .btn-arrow{
+    width: 16px;
+    height: 16px;
+    padding: 0;
+}
+
+@media only screen and (max-width: 650px){
+    .text-container{
+        width: 90%;
+    }
+    .text-container p{
+        width: 100%;
+    }
+}
