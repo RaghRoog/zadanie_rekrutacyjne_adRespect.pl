@@ -65,6 +65,7 @@
     transform: scale(1.05) rotate(-5deg);
     background-color: #1B5B31;
     color: white;
+    box-shadow: 5px -5px #123c21, 10px -10px #0d2b17;
 }
 .card:hover .btn{
     color: white;
