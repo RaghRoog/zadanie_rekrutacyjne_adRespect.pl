@@ -113,15 +113,17 @@ p{
     gap: 12px;
     outline: 1px solid #F5F0EC;
 }
-.o-firmie-section small{
-    display: inline-block;
-    margin-bottom: 16px;
-}
 .o-firmie-section .h1{
     margin-bottom: 40px;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1100px){
+    .o-firmie-section .text-and-btns{
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 991px) {
     .grid-side{
         padding: 0;
         flex-direction: column;
