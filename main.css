@@ -3,6 +3,7 @@
 @import './styles/ofertaSection.css';
 @import './styles/realizacjeSection.css';
 @import './styles/gallery.css';
+@import './styles/instaSection.css';
 
 html{
     font-size: calc(15px + 0.2vw);

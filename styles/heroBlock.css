@@ -77,12 +77,14 @@ p{
     gap: 32px;
 }
 .control-btn{
-    width: 48px;
-    height: 48px;
     outline: none;
     display: flex;
     align-items: center;
     border: 0;
+}
+.control-btn img{
+    height: 1.5rem;
+    width: auto;
 }
 .control-btn:last-child{
     transform: rotate(180deg);
@@ -159,7 +161,7 @@ p{
     .absolute-side{
         height: 60vh;
     }
-    .controls-container{
+    /* .controls-container{
         display: none;
-    }
+    } */
 }
