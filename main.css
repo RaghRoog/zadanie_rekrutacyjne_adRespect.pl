@@ -1,7 +1,21 @@
 @import './styles/navbar.css';
 @import './styles/heroBlock.css';
 @import './styles/ofertaSection.css';
+@import './styles/realizacjeSection.css';
+@import './styles/gallery.css';
 
 html{
     font-size: calc(15px + 0.2vw);
+}
+@media only screen and (min-width: 2000px) {
+    html{
+        font-size: 2rem;
+    }
+}
+small{
+    display: inline-block;
+    margin-bottom: 16px;
+}
+img{
+    user-select: none;
 }

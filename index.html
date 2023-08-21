@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="main.css">
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js" defer></script>
         <script type="module" src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg">
@@ -23,9 +24,9 @@
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Oferta</a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" class="dropdown-item">oferta 1</a></li>
-                            <li><a href="#" class="dropdown-item">oferta 2</a></li>
-                            <li><a href="#" class="dropdown-item">oferta 3</a></li>
+                            <li><a href="#" class="dropdown-item">Projekty</a></li>
+                            <li><a href="#" class="dropdown-item">Wizualizacje</a></li>
+                            <li><a href="#" class="dropdown-item">Realizacje</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -179,6 +180,62 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="container-fluid realizacje-section p-0">
+            <div class="text-container">
+                <small>Realizacje</small>
+                <p class="h1">Nasze <span class="fst-italic">projekty</span></p>
+            </div>
+            <div class="photos-section position-relative">
+                <div class="grid photos-container">
+                    <div data-index = 0 class="grid-item"><img src="imgs/realizacje/photo1.png" alt=""></div>
+                    <div data-index = 1 class="grid-item"><img src="imgs/realizacje/photo2.png" alt=""></div>
+                    <div data-index = 2 class="grid-item"><img src="imgs/realizacje/photo3.png" alt=""></div>
+                    <div data-index = 3 class="grid-item"><img src="imgs/realizacje/photo4.png" alt=""></div>
+                    <div data-index = 4 class="grid-item"><img src="imgs/realizacje/photo5.png" alt=""></div>
+                    <div data-index = 5 class="grid-item"><img src="imgs/realizacje/photo6.png" alt=""></div>
+                    <div data-index = 6 class="grid-item"><img src="imgs/realizacje/photo7.png" alt=""></div>
+                    <div data-index = 7 class="grid-item"><img src="imgs/realizacje/photo8.png" alt=""></div>
+                    <div data-index = 8 class="grid-item"><img src="imgs/realizacje/photo9.png" alt=""></div>
+                    <div data-index = 9 class="grid-item not-displayed"><img src="imgs/realizacje/photo1.png" alt=""></div>
+                    <div data-index = 10 class="grid-item not-displayed"><img src="imgs/realizacje/photo2.png" alt=""></div>
+                    <div data-index = 11 class="grid-item not-displayed"><img src="imgs/realizacje/photo3.png" alt=""></div>
+                    <div data-index = 12 class="grid-item not-displayed"><img src="imgs/realizacje/photo4.png" alt=""></div>
+                    <div data-index = 13 class="grid-item not-displayed"><img src="imgs/realizacje/photo5.png" alt=""></div>
+                    <div data-index = 14 class="grid-item not-displayed"><img src="imgs/realizacje/photo6.png" alt=""></div>
+                    <div data-index = 15 class="grid-item not-displayed"><img src="imgs/realizacje/photo7.png" alt=""></div>
+                    <div data-index = 16 class="grid-item not-displayed"><img src="imgs/realizacje/photo8.png" alt=""></div>
+                    <div data-index = 17 class="grid-item not-displayed"><img src="imgs/realizacje/photo9.png" alt=""></div>
+                    <div data-index = 18 class="grid-item not-displayed"><img src="imgs/realizacje/photo1.png" alt=""></div>
+                    <div data-index = 19 class="grid-item not-displayed"><img src="imgs/realizacje/photo2.png" alt=""></div>
+                    <div data-index = 20 class="grid-item not-displayed"><img src="imgs/realizacje/photo3.png" alt=""></div>
+                    <div data-index = 21 class="grid-item not-displayed"><img src="imgs/realizacje/photo4.png" alt=""></div>
+                    <div data-index = 22 class="grid-item not-displayed"><img src="imgs/realizacje/photo5.png" alt=""></div>
+                    <div data-index = 23 class="grid-item not-displayed"><img src="imgs/realizacje/photo6.png" alt=""></div>
+                    <div data-index = 24 class="grid-item not-displayed"><img src="imgs/realizacje/photo7.png" alt=""></div>
+                    <div data-index = 25 class="grid-item not-displayed"><img src="imgs/realizacje/photo8.png" alt=""></div>
+                    <div data-index = 26 class="grid-item not-displayed"><img src="imgs/realizacje/photo9.png" alt=""></div>
+                </div>
+                <div class="gradient position-absolute"></div>
+                <button class="display-btn">
+                    <span>Rozwiń</span>
+                    <img src="imgs/arrow-down.svg" alt="arrow down">
+                </button>
+            </div>
+        </div>
+        <div class="container-fluid gallery p-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="white" class="bi bi-arrow-left-circle gallery-prev" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+            </svg>
+            <div class="slides-container">
+                <div class="gallery-slide"><img src="" alt=""></div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="white" class="bi bi-arrow-right-circle gallery-next" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="2.5rem" fill="white" class="bi bi-x-lg close-gallery" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+            </svg>
         </div>
 
         <script>

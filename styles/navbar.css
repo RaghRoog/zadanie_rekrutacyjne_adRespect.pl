@@ -13,7 +13,7 @@
     width: min(25vw, 300px);
 }
 .search-form-display-flex{
-    gap: 12px;
+    gap: 1rem;
     display: flex;
 }
 .search-btn{
@@ -27,6 +27,10 @@
 .search-btn:hover{
     background-color: white;
     color: #1B5B31;
+}
+.search-icon{
+    width: 1rem;
+    height: auto;
 }
 
 @media only screen and (max-width: 991px) {

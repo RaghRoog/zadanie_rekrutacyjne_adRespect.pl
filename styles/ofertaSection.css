@@ -12,10 +12,6 @@
 .text-container p{
     width: 75%;
 }
-.text-container small{
-    display: inline-block;
-    margin-bottom: 16px;
-}
 .text-container h1{
     margin-bottom: 32px;
 }

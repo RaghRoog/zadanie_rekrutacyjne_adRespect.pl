@@ -1,0 +1,67 @@
+.realizacje-section{
+    background-color: #DCC1AB;
+}
+.realizacje-section .text-container{
+    width: 100%;
+    padding-left: 160px;
+    padding-top: 120px;
+    padding-bottom: 96px;
+}
+.photos-section{
+    padding-bottom: 44px;
+}
+.realizacje-section .photos-container{
+    width: 100%;
+    height: 160vh;
+}
+.grid-item{
+    cursor: pointer;
+}
+.grid-item img{
+    width: 100%;
+}
+.not-displayed{
+    display: none;
+}
+.display-imgs{
+    display: flex;
+}
+.gradient{
+    width: 100%;
+    height: 70%;
+    top: 30%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #DCC1AB);
+    z-index: 1;
+    pointer-events: none;
+}
+.display-btn{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    border: 1px solid #111111;
+    border-radius: 200px;
+    background-color: transparent;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 12px;
+    padding-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.display-btn img{
+    width: 0.9rem;
+    height: auto;
+    filter: brightness(0) saturate(100%) invert(0%) sepia(5%) saturate(1277%) hue-rotate(316deg) brightness(94%) contrast(87%);
+}
+
+@media only screen and (max-width: 992px){
+    .realizacje-section .text-container{
+        padding-left: 24px;   
+    }
+}
+@media only screen and (max-width: 650px){
+
+}

@@ -6,7 +6,7 @@ dlatego są one w jednym pliku */
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 64px;
+    padding-right: 4rem;
 }
 .text-and-btns{
     width: min-content;
@@ -38,6 +38,10 @@ p{
     color: white;
     background-color: #1B5B31;
     outline: none;
+}
+.btn:last-child img{
+    width: 0.9rem;
+    height: auto;
 }
 .btn{
     white-space: nowrap;
