@@ -56,6 +56,18 @@
     font-size: 1rem;
     margin-top: 64px;
 }
+.card .btn:active{
+    outline: none;
+    border-bottom: 1px solid #1B5B31;
+}
+.card .btn:focus{
+    outline: none;
+    border-bottom: 1px solid #1B5B31;
+}
+.card .btn:focus-visible{
+    outline: none;
+    border-bottom: 1px solid #1B5B31;
+}
 .card .btn-arrow{
     width: 16px;
     height: 16px;
