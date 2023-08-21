@@ -4,6 +4,10 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.insta-section *::selection{
+    color: #1B5B31;
+    background-color: #F5F0EC;
+}
 .insta-section .container{
     background-color: #1B5B31;
     width: fit-content;
@@ -40,6 +44,15 @@
     padding-bottom: 12px;
     color: #1B5B31;
     margin-right: 1.5rem;
+    transition: .2s ease-in;
+}
+.insta-section button:active{
+    transform: translateY(5px);
+}
+.insta-section button:hover{
+    background-color: #1B5B31;
+    color: #F5F0EC;
+    outline: 1px solid #F5F0EC;
 }
 
 @media only screen and (max-width: 1000px){

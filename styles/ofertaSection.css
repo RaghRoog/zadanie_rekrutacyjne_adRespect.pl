@@ -6,6 +6,10 @@
     flex-direction: column;
     align-items: center;
 }
+.oferta-section *::selection{
+    background-color: #1B5B31;
+    color: #F5F0EC;
+}
 .text-container{
     width: min(80%, 1000px);
 }

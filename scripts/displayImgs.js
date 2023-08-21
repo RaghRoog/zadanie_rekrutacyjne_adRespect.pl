@@ -20,5 +20,6 @@ export default function displayImgs() {
         }
         btn.children[0].innerHTML = 'Zwiń'
         btn.children[1].style.transform = 'rotate(180deg)'
+        btn.style.bottom = '10px'
     })
 }

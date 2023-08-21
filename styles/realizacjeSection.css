@@ -1,6 +1,10 @@
 .realizacje-section{
     background-color: #DCC1AB;
 }
+.realizacje-section *::selection{
+    color: #DCC1AB;
+    background-color: #111111;
+}
 .realizacje-section .text-container{
     width: 100%;
     padding-left: 160px;
@@ -61,7 +65,4 @@
     .realizacje-section .text-container{
         padding-left: 24px;   
     }
-}
-@media only screen and (max-width: 650px){
-
 }

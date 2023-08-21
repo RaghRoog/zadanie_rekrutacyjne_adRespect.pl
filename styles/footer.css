@@ -4,6 +4,10 @@
     padding-bottom: 80px;
     padding-top: 80px;
 }
+.footer *::selection{
+    background-color: #F5F0EC;
+    color: #111111;
+}
 .footer img{
     width: 6rem;
     height: auto;
@@ -38,6 +42,13 @@
     padding-bottom: 14px;
     border-radius: 200px;
     white-space: nowrap;
+    transition: .2s ease-in;
+}
+.text1 button:hover{
+    background-color:#123e21;
+}
+.text1 button:active{
+    transform: translateY(5px);
 }
 .text1 .bottom{
     display: flex;
@@ -50,6 +61,24 @@
 .footer .links a{
     text-decoration: none;
     color: #F5F0EC;
+    display: inline-block;
+    position: relative;
+}
+.footer .links a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #F5F0EC;
+    transform-origin: bottom right;
+    transition: transform 0.2s ease-out;
+}
+.footer .links a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 .text2{
     display: flex;

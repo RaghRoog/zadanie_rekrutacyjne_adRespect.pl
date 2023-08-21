@@ -29,24 +29,18 @@ p{
 .hero-section{
     background-color: #DCC1AB;
 }
+.hero-section *::selection{
+    background-color: #1B5B31;
+    color: #F5F0EC;
+}
 .btn-container{
     display: flex;
     gap: 36px;
     width: min-content;
 }
-.btn:first-child{
-    color: white;
-    background-color: #1B5B31;
-    outline: none;
-}
-.btn:last-child img{
-    width: 0.9rem;
-    height: auto;
-}
 .btn{
     white-space: nowrap;
     font-size: 1rem;
-    color: white;
     color: #1B5B31;
     border-radius: 200px;
     outline: 1px solid #1B5B31;
@@ -54,6 +48,40 @@ p{
     padding-right: 22px;
     padding-top: 12px;
     padding-bottom: 14px;
+}
+.btn:first-child{
+    color: #F5F0EC;
+    background-color: #1B5B31;
+    outline: none;
+}
+.btn:first-child:active{
+    color: #F5F0EC;
+    background-color: #1B5B31;
+    outline: none;
+    border: none;
+}
+.btn{
+    transition: .2s ease-in;
+}
+.btn:hover{
+    transform: translateY(5px);
+}
+.btn:last-child img{
+    width: 0.9rem;
+    height: auto;
+}
+.btn:last-child:active{
+    color: #1B5B31;
+    outline: 1px solid #1B5B31;
+    border: none;
+}
+.btn:last-child:focus{
+    outline: 1px solid #1B5B31;
+    border: none;
+}
+.btn:last-child:focus-visible{
+    outline: 1px solid #1B5B31;
+    border: none;
 }
 .carousel, .carousel-inner{
     height: inherit;
@@ -95,6 +123,10 @@ p{
     background-color: #1B5B31;
     color: #F5F0EC;
 }
+.o-firmie-section *::selection{
+    background-color: #F5F0EC;
+    color: #1B5B31;
+}
 .img-container{
     height: 100%;
     width: 100%;
@@ -117,6 +149,14 @@ p{
     justify-content: center;
     align-items: center;
     gap: 12px;
+    outline: 1px solid #F5F0EC;
+}
+.o-firmie-section .btn:active{
+    color: #F5F0EC;
+    outline: 1px solid #F5F0EC;
+    border: none;
+}
+.o-firmie-section .btn:focus, .btn:focus-visible{
     outline: 1px solid #F5F0EC;
 }
 .o-firmie-section .h1{
