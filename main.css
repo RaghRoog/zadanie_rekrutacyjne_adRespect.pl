@@ -8,6 +8,7 @@
 
 html{
     font-size: calc(15px + 0.2vw);
+    scroll-behavior: smooth;
 }
 @media only screen and (min-width: 2000px) {
     html{
