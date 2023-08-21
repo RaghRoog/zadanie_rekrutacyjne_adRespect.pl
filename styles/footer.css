@@ -1,0 +1,126 @@
+.footer{
+    background-color: #111111;
+    color: #F5F0EC;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+.footer img{
+    width: 6rem;
+    height: auto;
+}
+.footer p{
+    margin: 0;
+    white-space: nowrap;
+}
+.text1{
+    display: flex;
+    flex-direction: column;
+    gap: 62px;
+}
+.text1 .top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.text1 .btn-container{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.text1 button{
+    border: 0;
+    outline: 0;
+    background-color: #1B5B31;
+    color: #F5F0EC;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 14px;
+    border-radius: 200px;
+    white-space: nowrap;
+}
+.text1 .bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .links{
+    display: flex;
+    gap: 48px;
+}
+.footer .links a{
+    text-decoration: none;
+    color: #F5F0EC;
+}
+.text2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+.made-by{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.kontakt{
+    display: flex;
+    gap: 48px;
+}
+hr{
+    margin: 0;
+    border-color: #F5F0EC;
+    border-width: 3px;
+}
+
+@media only screen and (max-width: 992px){
+    .text1 .bottom{
+        flex-direction: column;
+        gap: 12px;
+    }
+    .footer .links{
+        gap: 0;
+        justify-content: space-evenly;
+    }
+    .kontakt{
+        gap: 0;
+        justify-content: space-evenly;
+    }
+    .kontakt p{
+        width: fit-content;
+    }
+}
+@media only screen and (max-width: 770px){
+    .text1 .top{
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    .text1 .btn-container{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 400px){
+    .text1 .btn-container p{
+        white-space: break-spaces;
+        text-align: center;
+    }
+    .text2{
+     flex-direction: column;   
+     align-items: center;
+    }
+    .text2 p{
+        width: fit-content;
+    }
+    .text2 .made-by{
+        width: fit-content;
+    }
+}
+@media only screen and (max-width: 300px){
+    .footer .links{
+        flex-direction: column;
+        align-items: center;
+    }
+    .kontakt{
+        flex-direction: column;
+        align-items: center;
+    }
+}

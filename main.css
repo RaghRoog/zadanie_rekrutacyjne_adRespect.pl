@@ -4,6 +4,7 @@
 @import './styles/realizacjeSection.css';
 @import './styles/gallery.css';
 @import './styles/instaSection.css';
+@import './styles/footer.css';
 
 html{
     font-size: calc(15px + 0.2vw);
